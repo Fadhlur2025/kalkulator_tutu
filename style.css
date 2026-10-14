@@ -1,0 +1,30 @@
+:root{--bg:#eef3f1;--ink:#17302b;--muted:#5b716b;--card:#fff;--line:#cfdcd8;--aksen:#0e7c66;--aksen-ink:#fff;--sorot:#f6c453;--err:#b3261e}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1c19;--ink:#e6f0ed;--muted:#93aaa3;--card:#172926;--line:#2b423d;--aksen:#3cc4a6;--aksen-ink:#08201a;--sorot:#d9a62e;--err:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Segoe UI",system-ui,sans-serif}
+header,main{max-width:860px;margin:0 auto;padding:0 1rem}
+header{padding-top:2rem}
+h1{margin:0;font-size:2rem;letter-spacing:-.02em}
+header p{margin:.25rem 0 1.25rem;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+nav a{padding:.45rem .9rem;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--card)}
+nav a.aktif{background:var(--aksen);color:var(--aksen-ink);border-color:var(--aksen);font-weight:600}
+nav a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--sorot);outline-offset:2px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.25rem;margin-bottom:1rem}
+h2{margin:0 0 1rem;font-size:1.15rem}
+form label{display:block;margin-bottom:.8rem;font-size:.9rem;color:var(--muted)}
+input,select{display:block;width:100%;margin-top:.25rem;padding:.6rem .7rem;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px}
+button{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:.65rem 1.2rem;background:var(--aksen);color:var(--aksen-ink);font-weight:600}
+button.kecil{padding:.3rem .7rem;font-size:.85rem;background:transparent;color:var(--err);border:1px solid var(--line)}
+.hasil{margin-top:1rem;padding:1rem;border-left:6px solid var(--sorot);background:var(--bg);border-radius:8px}
+.hasil small{display:block;color:var(--muted)}
+.hasil strong{font-size:1.7rem}
+.error{color:var(--err);margin:.8rem 0 0}
+.judul-riwayat{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
+.judul-riwayat h2{margin:0}
+.kosong{color:var(--muted);margin:0}
+.tabel{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.5rem;border-bottom:1px solid var(--line);vertical-align:middle}
+th{color:var(--muted);font-weight:600}
+td form{margin:0}
